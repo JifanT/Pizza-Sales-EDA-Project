@@ -15,15 +15,13 @@ select
         as decimal(10,2)
 	) as avg_pizzas_per_order 
 from pizzasales; /* avg Pizza sold per order */
-update pizzasales set order_date=str_to_date(order_date,'%d-%m-%Y'); /* updates the order_date into 
-a standardized date format that MySQL can recognize and process */
+update pizzasales set order_date=str_to_date(order_date,'%d-%m-%Y'); /* updates the order_date into a standardized date format that MySQL can recognize and process */
 alter table pizzasales modify order_date date; /* modify the column datatype from text to date */
 select
 	dayname(order_date) as order_day,
 	count(distinct order_id) as total_orders
 from pizzasales group by dayname(order_date); /* number of orders on specific week days */
-update pizzasales set order_time=str_to_date(order_time,'%H.%i.%s'); /* updates the order_time into 
-a standardized date format that MySQL can recognize and process */
+update pizzasales set order_time=str_to_date(order_time,'%H.%i.%s'); /* updates the order_time into a standardized date format that MySQL can recognize and process */
 alter table pizzasales modify order_time time; /* modify the column datatype from text to time */
 select
 	hour(order_time) as hour_of_the_day,
