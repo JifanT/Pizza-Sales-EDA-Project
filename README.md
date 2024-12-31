@@ -1,10 +1,12 @@
+******Pizza Sales Analysis******
+
 ****Project Overview:****
 
 This is a Data Analysis project to gain insights into pizza sales trends and customer behavior by conducting an exploratory data analysis (EDA) on a historical dataset of pizza orders. This analysis will help identify key factors influencing sales, customer preferences, and areas for improvement in marketing and operations.
 
 ****Dataset Overview:****
 
-**This dataset contains information about pizza sales, including:**
+This dataset contains information about pizza sales, including:
 
 - order_id: Unique identifier for each order.
 - pizza_id: Unique identifier for each pizza type.
