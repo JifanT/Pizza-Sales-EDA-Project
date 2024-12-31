@@ -47,4 +47,4 @@
 
 - Sales Trends: Analyze sales trends over time (daily, weekly, monthly, yearly).
 - popular Pizza Categories: Identify the most popular pizza categories.
-Peak Sales Times: Determine the peak hours for sales.
+- Peak Sales Times: Determine the peak hours for sales.
